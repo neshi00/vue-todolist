@@ -14,7 +14,12 @@ new Vue({
         text: "fare 3",
         done: false,
       },
+      {
+        text: "fare 4",
+        done: false,
+      },
     ],
+    temporaryItem: "",
   },
   methods: {
     removeItem: function (index) {
@@ -26,6 +31,13 @@ new Vue({
       } else {
         this.todo[index].done = true;
       }
+    },
+    addItem: function () {
+      this.todo.push({
+        text: this.temporaryItem,
+        done: false,
+      });
+      this.temporaryItem = "";
     },
   },
 });

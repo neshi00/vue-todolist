@@ -17,6 +17,9 @@
   <body>
     <div id="app">
       <div class="container">
+        <input v-model="temporaryItem" />
+        <button @click="addItem">Aggiungi</button>
+
         <ul>
           <li v-for="item in todo">
             <span :class=" { sbarrato: item.done}">{{item.text}}</span>

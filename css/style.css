@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.sbarrato {
+  text-decoration: line-through;
+}
+
+span {
+  font-size: 30px;
+}

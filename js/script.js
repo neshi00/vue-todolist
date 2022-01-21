@@ -25,12 +25,8 @@ new Vue({
     removeItem: function (index) {
       this.todo.splice(index, 1);
     },
-    doneStatus: function () {
-      if (this.todo[index].done) {
-        this.todo[index].done = false;
-      } else {
-        this.todo[index].done = true;
-      }
+    doneStatus: function (index) {
+      this.todo[index].done = !this.todo[index].done;
     },
     addItem: function () {
       this.todo.push({
